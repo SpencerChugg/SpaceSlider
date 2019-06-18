@@ -32,6 +32,10 @@ namespace UnityEngine.UI.Extensions
 
             if (scrollSnap == null)
             {
+<<<<<<< HEAD
+=======
+                Debug.LogError("A ScrollSnap script must be attached");
+>>>>>>> a51991f1648afea3d195734d8e25f160e8fc21db
                 return;
             }
 
