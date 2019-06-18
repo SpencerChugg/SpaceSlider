@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6494998280971474597}
   - component: {fileID: 1833990323420868896}
+  - component: {fileID: 1832872931}
+  - component: {fileID: 8317161202806252442}
   m_Layer: 0
   m_Name: MediumShock
   m_TagString: Untagged
@@ -24,9 +26,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6409018454830837869}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9147614, w: 0.4039946}
-  m_LocalPosition: {x: 117.66324, y: -106.4952, z: -19440}
-  m_LocalScale: {x: 63.493237, y: 63.493237, z: 63.4932}
+  m_LocalRotation: {x: 0, y: 0, z: 0.91476244, w: 0.40399233}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.36824, y: 0.36824, z: 0.36824}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -70,8 +72,8 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 057994fcfac01b848be682ece78aeffe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
+  m_FlipX: 1
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 2.24, y: 2.24}
   m_AdaptiveModeThreshold: 0.5
@@ -79,3 +81,105 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1832872931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6409018454830837869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 797abb20b5b9e774cacb43cc53bdcc88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point1: {fileID: 0}
+  point2: {fileID: 0}
+  speed: 0.27
+  width: 1.7
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0065703024
+      value: -0.002590674
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.043156628
+      value: 0.05270234
+      inSlope: 0.99482644
+      outSlope: 0.99482644
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.13497677
+      value: 0.12669444
+      inSlope: 0.6724328
+      outSlope: 0.6724328
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.33645394
+      value: 0.20487209
+      inSlope: 0.093238756
+      outSlope: 0.093238756
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.69185406
+      value: 0.338278
+      inSlope: 0.6083355
+      outSlope: 0.6083355
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!61 &8317161202806252442
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6409018454830837869}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.27401495}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.24, y: 2.24}
+    newSize: {x: 2.24, y: 2.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.24, y: 1.0610263}
+  m_EdgeRadius: 0

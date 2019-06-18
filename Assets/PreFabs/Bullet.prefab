@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5411134682648224308}
   - component: {fileID: 5411134682648224309}
   - component: {fileID: 5411134682648224306}
+  - component: {fileID: 1133715250696913039}
+  - component: {fileID: 292008779}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -25,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5411134682648224311}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.625637, y: -192.72223, z: -22547.225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -95,9 +97,33 @@ Rigidbody2D:
   m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: -4
+  m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 57fa3ee0466ab1a4b8c04014a07a79de, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 5
+--- !u!114 &1133715250696913039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5411134682648224311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b4e3b472d1bba4eabd3725ffad0256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 3
+--- !u!247 &292008779
+ConstantForce2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5411134682648224311}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0.01}
+  m_RelativeForce: {x: 0, y: 0}
+  m_Torque: 0
